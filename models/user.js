@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const booksUsersConnection = require('../dbConnectionBooksUsers');
 
-// Define User schema
+
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -10,8 +10,8 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true,  // Ensure emails are unique
-        match: [/^\S+@\S+\.\S+$/, 'Please provide a valid email address'] // Email validation
+        unique: true,  
+        match: [/^\S+@\S+\.\S+$/, 'Please provide a valid email address']
     }
 });
 

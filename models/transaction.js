@@ -20,7 +20,7 @@
 
         returnDate: { 
             type: Date
-            //required: true
+            
         },
 
         rent: {
@@ -29,7 +29,7 @@
 
         isReturned: { 
                 type: Boolean, 
-                default: false  // Defaults to false, meaning the book is not yet returned
+                default: false 
             }
     });
 
